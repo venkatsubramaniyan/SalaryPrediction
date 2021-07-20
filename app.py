@@ -56,11 +56,7 @@ def predict_salary(data:money):
     return {
         'prediction':prediction[0][0]
     }
-@app.post("/")
-async def root(file:UploadFile=File(...)):
-    f = open('file.filename',)
-    data = json.load(f)
-    return data
+
 
 
        
